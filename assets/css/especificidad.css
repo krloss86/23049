@@ -1,0 +1,51 @@
+/*descendiente*/
+p > strong {
+    color: orange;
+}
+
+/*hermano adyancente*/
+h1 + p {
+    color: red;
+}
+
+/*selector general*/
+/*alt+126 ~ */
+h2 ~ p {
+    color:aqua;
+}
+
+/*first-cihld | last-child*/
+div h3:first-child {
+    color:brown;
+}
+
+div h3:last-child {
+    color:brown;
+}
+
+div h3:nth-child(4) {
+    color:green;
+}
+
+
+tbody tr:nth-child(odd) {/*impar*/
+    background-color: red;
+}
+tbody tr:nth-child(even) {
+    background-color: green;
+}
+
+tbody tr:last-child {
+    background-color: orange !important;
+}
+tbody tr:first-child {
+    background-color: yellow !important;
+}
+
+thead th:first-child{
+    background-color: aqua;
+}
+thead th:last-child{
+    background-color: black;
+    color: white;
+}

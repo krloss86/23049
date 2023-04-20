@@ -1,0 +1,89 @@
+
+/**/
+* {
+    font-size: 16px;
+}
+
+body {
+    background-color: black;
+    color:white;
+}
+
+header {
+    background-color: beige;
+    color: black;
+    height: 50px;
+    border: 2px solid red;
+}
+.logo {
+    width: 20px;
+}
+
+.img-cointainer {
+    padding-top: 15px;
+    background-color: aqua;
+    text-align: center;
+}
+.img-site {
+    border-radius: 10px;
+    width: 20%;
+}
+.img-site:hover {
+    border: 1px dotted blue;
+}
+/*display: puedo hacer que un elemento
+de bloque se comporte como inline y que un inline
+se comporte como bloque
+*/
+
+header nav{
+    display: inline;
+}
+/*
+header > nav > li{
+    display: inline;
+}
+*/
+header li,a {
+    display: inline;
+}
+
+a {
+    font-size: 1.2em;
+}
+a:hover {
+    color: blue;
+    font-size: 1.3em;
+    cursor: copy ; /*| imagen en cursor*/
+}
+.text-bold {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/*footer*/
+footer {
+    background-color: aquamarine;
+}
+
+.footer-right{
+    width: 48%;
+    display: inline-block;
+    /*
+    convertir 
+    algo de bloque en inline, pero 
+    con la capacidad de asignar ancho y alto
+    */
+    border: 1px solid red;
+    color:black;
+    background-color: blueviolet;
+}
+.footer-left {
+    border: 1px solid red;
+    width: 48%;
+    display: inline-block;
+    /*convertir 
+    color:black;
+    background-color: azure;
+    */
+}

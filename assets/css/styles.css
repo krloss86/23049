@@ -1,0 +1,59 @@
+/*solo codigo css*/
+h1 {
+    color: green;
+}
+
+/*SELECTORES*/
+/*selector universal*/
+* {
+    /*font-size: 16px;*/
+}
+
+body {
+    background-color: black;/*color de fondo*/
+    /*background: url();*/
+    color:white;/*color a los textos*/
+    text-align: center;/*centrar el texto*/
+}
+/*tipo*/
+h2 {
+    font-size: 35px ; /*tamaño de fuente*/
+    text-transform: uppercase; /*mayuscula*/
+}
+
+#cv_img {
+    border-radius: 50%;/*circulo, u utra forma!!*/
+    width: 20%; /*ancho*/
+}
+
+/*SELECTORES POR ID*/
+/*por id, llevan un # delante del nombre*/
+#foto {
+    background-color: rgb(221, 210, 196);
+    color:rgb(1, 37, 37)
+}
+
+/*SELECTORES DE CLASE*/
+.cv_cursos {
+    text-transform: capitalize;
+    text-align: left;
+    font-size: 20px;
+}
+#cv_curso_img {
+    width: 20%;
+}
+img.cv_curso_img_left {
+    width: 50%;
+}
+
+#cv_curso_info {
+    background-color: white;
+    color: rgb(5, 5, 87);    
+}
+
+#cv_curso_info h3 {
+    font-size: 20px;
+}
+#cv_curso_info p {
+    font-size: 15px;
+}

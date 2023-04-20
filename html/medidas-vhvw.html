@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #container {
+            height: 200px;
+            width: 200px;
+            /* background-color: aqua; */
+            position: fixed;
+            top: 40%;
+            right: 0px;
+        }
+        .imagen-container {
+            /* background-color: blueviolet; */
+            width: 100%;
+            height: 50%;
+            position: relative;
+            cursor: pointer;
+        }
+        #imagen {
+            position: absolute;
+            right: 0;
+            top:40px
+        }
+        #texto {
+            visibility: hidden;
+            border-radius: 10px;
+            padding-top: 10px;
+            text-align: center;
+            color:white;
+            margin-right: 2px;
+            font-weight: bold;
+            /* padding-left: 15px; */
+            height: 30px;
+            background-color: green;
+            /* display: none; */
+            /* background-color: blue; */
+        }
+
+        .imagen-container:hover #texto {
+            visibility: visible;
+            /* display:block; */
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="imagen-container">
+            <div id="texto">
+                <p>¿Necesitas ayuda?</p>
+            </div>      
+            <div id="imagen">
+                <img src="../assets/img/sofia.png">
+            </div>
+        </div>
+    </div>  
+</body>
+</html>

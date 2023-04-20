@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <header>
+        <h1>Apendiendo formularios</h1>
+    </header>
+    <main>
+        <section id="producto-buscador">
+            <form>
+                <input type="search">
+                <button type="submit">  
+                    Buscar
+                </button>
+            </form>
+        </section>
+        <section id="producto-alta">
+            <fieldset>
+                <legend>
+                    <b>Articulo</b>
+                </legend>
+                <form action="/AltaArticuloController"
+                    method="GET">
+                    <div>
+                        <label for="id">ID&nbsp;</label>
+                        <input type="text"
+                            name="id"
+                            id="id"
+                            required
+                            placeholder="id único"
+                        />
+                    </div>
+                    <div>
+                        <label for="precio">PRECIO</label>
+                        <select name="moneda"
+                            id="moneda">
+                            <option value=""></option>
+                            <option value="USD">DOLAR</option>
+                            <option VALUE="ARS">PESOS ARG.</option>
+                        </select>
+                        <input type="number" 
+                            name="precio"
+                            id="precio"
+                            placeholder="0">
+                    </div>
+                    <div>
+                        <label for="tipo">TIPO:</label>
+                        <select name="tipo"
+                            id="tipo">
+                            <option value="-1">seleccione</option>
+                            <option value="1">Libros</option>
+                            <option value="2">Peliculas</option>
+                            <option value=" ">Electrodomesticos</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="radio" 
+                            checked 
+                            name="estado" 
+                            id="nuevo"
+                        /> 
+                        <label for="nuevo">Nuevo</label>
+                        <input type="radio"
+                            name="estado" 
+                            id="usado"
+                        /> 
+                        <label for="usado">Usado</label>
+                    </div>
+                    <div>
+                        <label>Tamaño:</label>
+                        <div>
+                            <input type="checkbox"/>
+                            <label for="">Chico</label>
+                            <input for=""type="checkbox"/>
+                            <label>Mediano</label>
+                            <input type="checkbox"/>
+                            <label>Grande</label>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="file">
+                    </div>
+                    <div>
+                        <label>Campo privado:</label>
+                        <input name="datoPrivado" type="password">
+                    </div>
+                    <div>
+                        <label>Email:</label>
+                        <input type="email"
+                            name="email" 
+                        />
+                    </div>
+                    <div>
+                        <label>Fecha Alta:</label>
+                        <input type="date"
+                            name="fechaAlta" 
+                        />
+                    </div>
+                    <div>
+                        <button type="submit">
+                            Enviar
+                        </button>
+                    </div>
+                </form>
+            </fieldset>
+        </section>
+        <section id="producto-listado">
+            <h3>Listado</h3>
+            <table width="100%" border="1">
+                <tr>
+                    <th>ID</th>
+                    <th>PRECIO</th>
+                    <th>TIPO</th>
+                    <th>ESTADO</th>
+                    <th>TAMAÑO</th>
+                    <th>IMG</th>
+                </tr>
+            </table>
+
+        </section>
+    </main>
+</body>
+</html>
