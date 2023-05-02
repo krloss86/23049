@@ -49,3 +49,9 @@ let persona = {
 }
 
 console.log(persona);
+
+//puede definir variables con:
+// let variable en ambito determinado
+// var variable global
+// const constante, no puede cambiar su "valor"
+
