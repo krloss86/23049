@@ -18,3 +18,29 @@ function sumar() {
     
     apuntadorARes.innerText = parseFloat(apuntadorAA.value) + parseFloat(apuntadorAB.value);
 }
+
+/*
+    - operadores artimeticos (+ - * /)
+    - logicos &&: izq  && der  
+*/
+
+const a = 10;//number
+const b = '10';//string
+const c = 50;
+
+console.log(a === b);
+
+//quiero saber si c > 30 y si a es igual a b?
+
+console.log(a === b &&  c > 30);
+
+
+const usuario = 'pepe';
+const password = '1234';
+
+//si usuario es carlos y password es 1234 mostrar un alerta
+
+//condicional!!!!!!
+if(usuario === 'carlos' && password === '1234') {
+    alert('acceso correcto');
+} 
